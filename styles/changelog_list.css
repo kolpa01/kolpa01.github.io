@@ -5,6 +5,40 @@ body {
     margin: 0;
 }
 
+#text h1 {
+  display: flex;
+  justify-content: center;
+  border: #ff38a9 10px solid;
+  border-radius: 10px;
+  background-color: #ff38a9;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+#text h2 {
+  display: flex;
+  justify-content: center;
+  border: #621887 10px solid;
+  border-radius: 10px;
+  background-color: #621887;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#text h3 {
+  display: flex;
+  justify-content: center;
+  border: #29252f 10px solid;
+  border-radius: 10px;
+  background-color: #29252f;
+  text-decoration: none;
+}
+
+#text p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -55,10 +89,94 @@ ul.topnav li.right {
 }
 
 #tst {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 10px;
 }
+
+#changelog_entry {
+    width: 95%;
+    height: 350px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #621887;
+}
+
+#changelog_entry img {
+    image-rendering: pixelated;
+    background-color: #111220;
+    float: left;
+    margin-top: 35px;
+    margin-left: 35px;
+    height: 280px;
+    width: 280px;
+    border-radius: 20px;
+}
+
+#changelog_entry h1 {
+    margin-top: 40px;
+    margin-left: 350px;
+    font-size: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+}
+
+#changelog_entry p {
+    display: flex;
+    margin-top: 2px;
+    margin-left: 350px;
+    margin-right: 35px;
+    overflow: hidden;
+    max-height: 125px;
+    height: 125px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    font-size: 100%;
+}
+
+#changelog_button {
+    height: 75px;
+    margin-right: 35px;
+    margin-left: 350px;
+    border-radius: 10px;
+    background-color: #ff38a9;
+    padding: 0;
+}
+
+#changelog_button a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    font-size: 200%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 75px;
+    width: 100%;
+    padding: 0;
+}
+
+#changelog_button a:hover {
+    background-color: #BF19B7;
+    border-radius: 10px;
+}
+
+/** #changelog_entry a {
+    height: 100px;
+    width: 100px;
+    background-color: #ff38a9;
+} **/
 
 #chabox {
     display: flex;
@@ -101,7 +219,88 @@ ul.topnav li.right {
 }
 
 
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 832px) {
+    /** #changelog_entry {
+        width: 95%;
+        height: 100%;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: #621887;
+    }
+
+    #changelog_entry a {
+        width: 100%;
+        float: right;
+    }
+
+    #changelog_entry img {
+        background-color: #111220;
+        float: left;
+        margin-top: 35px;
+        margin-left: 5%;
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+        margin-bottom: 35px;
+    }
+
+    #changelog_entry h1 {
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: center;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    #changelog_entry p {
+        display: flex;
+        float: none;
+        margin-top: 2px;
+        margin-left: 35px;
+        margin-right: 35px;
+        overflow: hidden;
+        max-height: 125px;
+        height: 125px;
+        text-overflow: ellipsis;
+        text-align: justify;
+    }
+
+    #changelog_button {
+        height: 75px;
+        margin-right: 35px;
+        margin-left: 35px;
+        border-radius: 10px;
+        background-color: #ff38a9;
+        padding: 0;
+    }
+
+    #changelog_button a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #fff;
+        align-items: center;
+        font-size: 200%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 75px;
+        margin-bottom: 35px;
+        width: 100%;
+        padding: 0;
+    } **/
+
+    #changelog_entry {
+        display: none;
+    }
+
+    #text {
+        display: none;
+    }
+
+    #tst {
+        display: flex;
+    }
 
     ul.topnav li.right,
     ul.topnav li {
@@ -124,7 +323,7 @@ ul.topnav li.right {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1390px) {
     .tsxt {
         width: 90vw;
     }
@@ -147,4 +346,5 @@ ul.topnav li.right {
 
 .disabled a:hover {
     background-color: #3b3141;
+    color: #f00;
 }
