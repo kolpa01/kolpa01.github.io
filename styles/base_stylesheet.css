@@ -1,0 +1,135 @@
+body {
+    margin: 0px;
+    background-color: #051b3f;
+    font-family: Helvetica, sans-serif;
+}
+
+.navigation_bar {
+    position: sticky;
+    top: 0;
+}
+
+.navigation_bar ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #0062ff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation_bar li {
+    float: left;
+    margin: 5px;
+}
+
+.navigation_bar li.right {
+    float: right;
+    margin: 5px;
+}
+
+.navigation_bar li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation_bar li a:hover {
+    color: #00e2fc;
+}
+
+.navigation_bar li a.bg-button {
+    background-color: #fff;
+    color: #0062ff;
+    border-radius: 10px;
+}
+
+.navigation_bar li a.bg-button:hover {
+    background-color: #21b5ff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.site_body {
+    background-color: #000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 56vw;
+}
+
+.body_container {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    text-align: justify;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    color: #00e2fc;
+}
+
+a:hover {
+    color: #0062ff;
+}
+
+h1 {
+    border: #21b5ff 10px solid;
+    border-radius: 10px;
+    background-color: #21b5ff;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+}
+
+h2 {
+    border: #447aff 10px solid;
+    border-radius: 10px;
+    background-color: #447aff;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+h3 {
+    border: #0062ff 10px solid;
+    border-radius: 10px;
+    background-color: #0062ff;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 672px) {
+    .navigation_bar li,
+    .navigation_bar li.right {
+        float: none;
+    }
+    .navigation_bar {
+        position: relative;
+    }
+    .site_body {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .site_body {
+        width: 90vw;
+    }
+}
